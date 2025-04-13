@@ -1,0 +1,563 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  color: rgb(240, 240, 240);
+  background-color: rgb(18, 18, 18);
+  font-family: "Unbounded", sans-serif;
+}
+
+.sessao-headline,
+.sessao-servicoes,
+.section3,
+.sessao-projetos,
+.sessao-planos,
+.sessao-contato {
+  margin: 0px 10px 0px 10px;
+}
+
+/* CABEÇALHO */
+header {
+  z-index: 99999;
+  width: 100%;
+  position: fixed;
+}
+.menu-desktop {
+  background-color: rgb(34, 34, 34);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+li a {
+  padding: 5px;
+  text-decoration: none;
+  color: rgb(220, 220, 220);
+  transition: 0.8s;
+}
+
+li a:hover {
+  border-bottom: 1px solid grey;
+}
+
+.img-webdini {
+  width: 100px;
+  height: 85px;
+}
+
+.btnheader {
+  color: #ffffff;
+  border: 1px solid white;
+}
+
+/* MENU MOBILE */
+#buttonMenu {
+  display: none;
+}
+
+.navhidden {
+  display: none;
+}
+
+.ul-mobile {
+  border-top: 1px solid #ffffff;
+  z-index: 9999;
+  padding: 20px 20px 20px 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(34, 34, 34);
+}
+
+/* SECAO HEADLINE */
+
+.sessao-headline {
+  padding: 20px;
+  color: rgb(0, 0, 0);
+  min-height: 90vh;
+  background-color: rgb(255, 255, 255);
+}
+
+.container-principal {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containertext {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.text1 {
+  font-size: 2.2rem;
+  width: 80%;
+}
+button {
+  background: none;
+  border: none;
+  color: white;
+  border: 1px solid rgb(240, 240, 240);
+  padding: 7px 30px 7px 30px;
+  transition: 0.7s;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.imgheadline {
+  max-width: 750px;
+}
+
+.btn-principal {
+  padding: 20px 100px 20px 100px;
+  border: 2px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  transition: 0.4s;
+}
+
+.btn-principal:hover {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+/* SEÇAO SERVICOS OFERECIDOS */
+.sessao-servicoes {
+  text-align: center;
+  min-height: 80vh;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-cards {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  border-radius: 10px;
+  display: flex;
+  width: 400px;
+  height: 200px;
+  box-shadow: 2px 7px 13px 0px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  border-color: #ffffff;
+}
+
+.card-body {
+  background-color: #1e1e1e;
+  flex-grow: 1;
+  padding: 24px;
+}
+
+.card-title {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+.card-text {
+  line-height: 1.4;
+  margin: 10px 0px 0px 0px;
+  font-size: 17px;
+  color: #dddddd;
+}
+
+/* SEÇAO POR QUE ME ESCOLHER */
+
+.section3 {
+  padding-top: 50px;
+  color: white;
+  min-height: 90vh;
+  background-color: #1e1e1e;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgtrabalho {
+  background-color: #ffffff;
+  width: 130px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 100px;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.content-title {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.textos {
+  width: 300px;
+}
+.titulo {
+  text-align: center;
+}
+
+/* SEÇAO PROJETOS  */
+.sessao-projetos {
+  margin-top: 100px;
+  color: rgb(255, 255, 255);
+  background-color: #1f1f1f;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.slide {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  transition: 0.8s;
+}
+.slide img:hover {
+  transform: scale(1.02);
+}
+
+.dots-container {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  background-color: #3b3636;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #ffffff;
+}
+/* PLANOS PARA CLIENTES */
+.sessao-planos {
+  min-height: 80vh;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-plano {
+  display: flex;
+  border-radius: 16px 16px 16px 16px;
+  width: 400px;
+  height: 400px;
+  box-shadow: 2px 7px 13px 0px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  border: 1px solid white;
+}
+.card-body-plano {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-grow: 1;
+  padding: 24px;
+  background-color: #2a2a2a;
+}
+
+.card-title-plano {
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+.card-text-plano {
+  line-height: 1.4;
+  font-size: 17px;
+  color: #cccccc;
+}
+
+.orcamento {
+  text-align: center;
+}
+
+/*  CONTATO */
+.sessao-contato {
+  margin-top: 100px;
+  color: white;
+  padding: 50px;
+  background-color: #1e1e1e;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 90px;
+}
+
+.formulario {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.formulario input,
+.formulario textarea {
+  padding: 12px;
+  border: 1px solid #444;
+  background-color: #2a2a2a;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.formulario button {
+  position: relative;
+  padding: 12px;
+  background-color: #3a3a3a;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: 1px solid white;
+}
+
+.formulario button:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+/* RODAPÉ */
+footer {
+  margin: 0px 10px 0px 10px;
+  border-top: 0.2px dashed white;
+  color: white;
+  padding: 100px;
+  background-color: #1e1e1e;
+}
+
+.containerfooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* WHATSAPP FIXO  */
+.whats-container {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 999;
+}
+.whatsimg {
+  width: 70px;
+}
+
+/* MEDIA PARA TABLETS */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* CABEÇALHO */
+  .nav-desktop {
+    display: none;
+  }
+
+  #buttonMenu {
+    display: block;
+  }
+
+  /* SECAO HEADLINE */
+  .container-principal {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .imgheadline {
+    max-width: 550px;
+  }
+
+  .text1 {
+    width: 90%;
+    font-size: 1.3rem;
+  }
+
+  .btn-principal {
+    padding: 15px 50px 15px 50px;
+  }
+  /* PLANOS PARA CLIENTES */
+  .card-plano {
+    width: 350px;
+    height: 450px;
+  }
+}
+
+/* MEDIA PARA CELULARES */
+@media (max-width: 767px) {
+  /* GERAL TITULOS SEÇÕES */
+  .whatsimg {
+    max-width: 50px;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  .section3,
+  .sessao-planos,
+  .sessao-contato {
+    min-height: 56vh;
+  }
+
+  .sessao-projetos {
+    min-height: 90vh;
+  }
+
+  p,
+  .card-text-plano,
+  .card-text {
+    font-size: 0.9rem;
+  }
+
+  /* MENU MOBILE */
+  .nav-desktop {
+    display: none;
+  }
+
+  #buttonMenu {
+    display: block;
+  }
+
+  .img-webdini {
+    max-width: 78px;
+  }
+
+  .btnheader {
+    padding: 6px 10px 6px 10px;
+  }
+
+  /* SECAO HEADLINE */
+  .container-principal {
+    padding: 60px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .imgheadline {
+    max-width: 350px;
+  }
+
+  .text1 {
+    width: 120%;
+    font-size: 1.1rem;
+  }
+
+  .btn-principal {
+    padding: 15px 50px 15px 50px;
+  }
+
+  /* SEÇAO SERVICOS OFERECIDOS */
+  .card {
+    max-width: 300px;
+    height: 150px;
+  }
+  /* SEÇAO POR QUE ME ESCOLHER */
+
+  .container {
+    gap: 60px;
+  }
+
+  .content-title {
+    gap: 40px;
+  }
+
+  .textos {
+    width: 100%;
+  }
+
+  .imgtrabalho {
+    max-width: 50px;
+  }
+
+  /* PLANOS PARA CLIENTES */
+  .container-cards {
+    display: flex;
+    gap: 50px;
+  }
+
+  .card-plano {
+    max-width: 300px;
+    height: 430px;
+  }
+
+  /* CONTATO */
+  .formulario {
+    width: 250px;
+  }
+
+  /* FOOTER */
+  .containerfooter {
+    text-align: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
